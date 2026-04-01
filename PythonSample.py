@@ -24,7 +24,7 @@ import pandas as pd
 
 def py_func(sasdate: float):
     ser = pd.Series([sasdate])
-    ser = pd.to_timedelta(ser, unit='D') + pd.Timestamp('1960-1-1')
+    ser = pd.to_timedelta(ser, unit='D') + pd.Timestamp('1970-1-1')
     dttm = ser[0]
     return dttm
 
